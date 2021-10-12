@@ -29,12 +29,11 @@ const options = {
     }
   },
 };
-// let calculatedMs;
 startButton.addEventListener('click', e => {
   startButton.setAttribute('disabled', true);
   const intervalSet = setInterval(() => {
-    let todayDate = new Date();
-    const calculatedMs = dateToSelect - todayDate;
+    let nowDate = new Date();
+    const calculatedMs = dateToSelect - nowDate;
     const obj = convertMs(calculatedMs);
     function addLeadingZero(value) {
       return String(value).padStart(2, '0');

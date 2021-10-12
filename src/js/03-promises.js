@@ -14,8 +14,8 @@ function createPromise(position, delay) {
   });
 }
 
-const submitBtn = document.querySelector('form');
-submitBtn.addEventListener('submit', e => {
+const submitButton = document.querySelector('form');
+submitButton.addEventListener('submit', e => {
   e.preventDefault();
   const amount = +e.target.elements['amount'].value;
   const step = +e.target.elements['step'].value;
